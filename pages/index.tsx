@@ -44,7 +44,10 @@ export default function Home({}: any) {
         <div className="relative flex flex-wrap justify-center transition duration-500 bg-background-light-mode dark:bg-background-dark-mode">
           <Navigation></Navigation>
           {artists.map((artist, index) => (
-            <Artist key={`${index}`} artist={artist.name} />
+            <Artist
+              key={`${index}-${artist.name}-${artist.images[0].url}`}
+              artist={artist}
+            />
           ))}
         </div>
       ) : (
