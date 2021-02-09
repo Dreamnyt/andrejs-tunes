@@ -1,6 +1,6 @@
 import React from "react";
 
-const Artist = ({ artist, key }) => {
+const Artist = ({ artist }) => {
   return (
     <div className="mt-8 w-movieCard bg-white text-black dark dark:text-white transition duration-500 dark:bg-gray-primary m-4 relative overflow-hidden rounded-sm shadow-lg">
       <img src={artist.images[0].url} className="w-full"></img>
