@@ -1,6 +1,6 @@
 import React from "react";
 
-const Artist = ({ artist }) => {
+const Artist = ({ artist, key }) => {
   return (
     <div className="mt-8 w-movieCard bg-white text-black dark dark:text-white transition duration-500 dark:bg-gray-primary m-4 relative overflow-hidden rounded-sm shadow-lg">
       <img src={artist.images[0]} className="w-full"></img>
@@ -11,7 +11,7 @@ const Artist = ({ artist }) => {
             "bg-span-light rounded-sm font-bold pt-1 pl-2 pb-1 pr-2 text-lg text-white dark:text-white"
           }
         >
-          {artist.key}
+          {key}
         </span>
       </div>
     </div>
