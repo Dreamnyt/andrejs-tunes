@@ -11,7 +11,7 @@ const Artist = ({ artist }) => {
             "bg-span-light rounded-sm font-bold pt-1 pl-2 pb-1 pr-2 text-lg text-white dark:text-white"
           }
         >
-          {artist.index}
+          {artist.key}
         </span>
       </div>
     </div>
