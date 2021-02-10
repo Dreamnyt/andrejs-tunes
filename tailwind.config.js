@@ -24,7 +24,7 @@ module.exports = {
       },
 
       width: {
-        movieCard: "340px",
+        movieCard: "320px",
         NavBar: "760",
       },
 
