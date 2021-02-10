@@ -3,10 +3,7 @@ import React from "react";
 const Artist = ({ artist }) => {
   return (
     <div className="mt-8 w-movieCard bg-white text-black dark dark:text-white transition duration-500 dark:bg-gray-primary m-4 relative overflow-hidden rounded-sm shadow-lg">
-      <img
-        src="https://snworksceo.imgix.net/tms/0865b89c-15bd-4b2b-8a7e-1b595ccc7063.sized-1000x1000.jpeg?w=1000"
-        className="w-full"
-      ></img>
+      <img src={artist.images[0].url} className="w-full"></img>
       <div className="text-textInfo flex items-center justify-between pt-4 pl-4 pb-4 pr-4 tracking-wider">
         <h4 className="text-lg font-semibold m-0">{artist.name}</h4>
         <span
