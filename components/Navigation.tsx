@@ -27,14 +27,14 @@ export default function Navigation({}: any) {
         w={40}
         h={40}
         onClick={switchTheme}
-        className="cursor-pointer w-8 h-8 active:outline-none blog-theme-switcher flex flex-row tooltip-handle items-center px-1 md:px-2 py-2 mx-1 font-semibold rounded-full transition ease-in-out duration-100 hover:bg-black-translucent"
+        className="flex flex-row rounded-full items-center color-white cursor-pointer w-8 h-8 active:outline-none px-1 md:px-2 py-2 mx-1 font-semibold hover:bg-black-translucent"
       />
     ) : (
       <SunIcon
         w={40}
         h={40}
         onClick={switchTheme}
-        className="cursor-pointer w-8 h-8 active:outline-none blog-theme-switcher flex flex-row tooltip-handle items-center px-1 md:px-2 py-2 mx-1 font-semibold rounded-full transition ease-in-out duration-100 hover:bg-black-translucent"
+        className="flex flex-row rounded-full items-center color-black cursor-pointer w-8 h-8 active:outline-none px-1 md:px-2 py-2 mx-1 font-semibold hover:bg-black-translucent"
       />
     );
 

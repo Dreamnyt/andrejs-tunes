@@ -6,6 +6,7 @@ const Artist = ({ artist, index }) => {
       {/* <div className="flex justify-center pt-4 pl-4 pb-4 pr-4 tracking-wider overflow-hidden"> */}
       <img
         src={artist.images[0].url}
+        alt={artist.name}
         className="object-cover h-96 w-full rounded-sm"
       ></img>
       {/* </div> */}
