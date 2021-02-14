@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css";
 import queryString from "query-string";
 import { LandingPage } from "../components/LandingPage";
 import LoggedIn from "../components/LoggedIn";
+import { NextSeo } from "next-seo";
 
 export default function Home({}: any) {
   const [user, setUser] = useState();
@@ -22,5 +23,13 @@ export default function Home({}: any) {
       });
   }, []);
 
-  return <>{user ? <LoggedIn /> : <LandingPage />}</>;
+  return (
+    <>
+      <NextSeo
+        title="Andrej's Tunes"
+        description="A website that displays your Spotify statistics."
+      />
+      {user ? <LoggedIn /> : <LandingPage />}
+    </>
+  );
 }
