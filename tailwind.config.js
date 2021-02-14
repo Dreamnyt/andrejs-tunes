@@ -17,6 +17,7 @@ module.exports = {
         "text-dark": "#6B6BF1",
         "white-translucent": "rgba(255, 255, 255, 0.3)",
         "black-translucent": "rgba(0, 0, 0, 0.3)",
+        "select-dark": "#121212",
       },
 
       borderWidth: {
@@ -39,6 +40,10 @@ module.exports = {
       transitionProperty: {
         "transition-icon": "all 5s ease",
       },
+
+      backgroundImage: (theme) => ({
+        "hero-pattern": "url('/images/arrow.png')",
+      }),
     },
   },
   variants: {

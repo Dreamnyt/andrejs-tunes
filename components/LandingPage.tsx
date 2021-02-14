@@ -29,8 +29,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({}) => {
                   <button
                     className="bg-green-primary rounded-3xl text-lg sm:text-3xl py-0.5 px-20 sm:py-1.5 sm:px-24 font-bold text-white"
                     onClick={() => {
-                      window.location.href =
-                        "https://andrejs-tunes-backend.herokuapp.com/login";
+                      window.location.href = "http://localhost:8888/login";
                     }}
                   >
                     Sign In
