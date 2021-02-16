@@ -41,13 +41,15 @@ export default function Navigation({}: any) {
   const logo =
     theme === "light" ? (
       <img
-        src="https://i.imgur.com/ji1grnd.png"
+        src="https://svgshare.com/i/U5J.svg"
         className="transition-all duration-300 filter-decolorize hover:filter-none h-10"
+        alt="Andrej's Tunes Logo"
       ></img>
     ) : (
       <img
         src="https://svgshare.com/i/Tta.svg"
-        className="transition-all duration-300 filter-decolorize hover:filter-none h-10 "
+        className="transition-all duration-300 filter-decolorize hover:filter-none h-10"
+        alt="Andrej's Tunes Logo"
       ></img>
     );
 
@@ -60,7 +62,10 @@ export default function Navigation({}: any) {
           </a>
 
           <div className="flex items-center justify-end font-semibold">
-            <a className="fadein-colors font-body hover:text-light-pink hidden sm:block">
+            <a
+              className="fadein-colors font-body hover:text-light-pink hidden sm:block px-1 md:px-2 py-2 mx-1 font-semibold hover:bg-black-translucent rounded-sm"
+              href="./about"
+            >
               About
             </a>
 

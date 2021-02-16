@@ -21,3 +21,7 @@ button:focus button:active {
   outline: 0;
   border: none;
 }
+
+#logIn:hover {
+  transform: scale(1.04);
+}
