@@ -61,8 +61,7 @@ export default function Navigation({}: any) {
     <div className="top-0 w-screen bg-white dark:bg-green-primary text-black dark:text-white text-lg transition duration-1000">
       <div className="mx-auto z-50 container ">
         <div className="flex items-center justify-around p-3">
-          {logo}
-
+          <a href="./">{logo}</a>
           <div className="flex items-center justify-end font-semibold">
             <a
               className="fadein-colors font-body hover:text-light-pink hidden sm:block px-1 md:px-2 py-2 mx-1 font-semibold hover:bg-black-translucent rounded-sm"
