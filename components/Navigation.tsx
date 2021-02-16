@@ -38,28 +38,30 @@ export default function Navigation({}: any) {
       />
     );
 
-  const logo =
-    theme === "light" ? (
-      <img
-        src="https://svgshare.com/i/U5J.svg"
-        className="transition-all duration-300 filter-decolorize hover:filter-none h-10"
-        alt="Andrej's Tunes Logo"
-      ></img>
-    ) : (
-      <img
-        src="https://svgshare.com/i/Tta.svg"
-        className="transition-all duration-300 filter-decolorize hover:filter-none h-10"
-        alt="Andrej's Tunes Logo"
-      ></img>
-    );
+  let logo;
+
+  if (isMounted) {
+    logo =
+      theme === "light" ? (
+        <img
+          src="https://svgshare.com/i/U5J.svg"
+          className="transition-all duration-300 h-10"
+          alt="Andrej's Tunes Logo"
+        ></img>
+      ) : (
+        <img
+          src="https://svgshare.com/i/Tta.svg"
+          className="transition-all duration-300 h-10"
+          alt="Andrej's Tunes Logo"
+        ></img>
+      );
+  }
 
   return (
     <div className="top-0 w-screen bg-white dark:bg-green-primary text-black dark:text-white text-lg transition duration-1000">
       <div className="mx-auto z-50 container ">
         <div className="flex items-center justify-around p-3">
-          <a className="fadein-colors font-body" href="/" id="header">
-            {logo}
-          </a>
+          {logo}
 
           <div className="flex items-center justify-end font-semibold">
             <a
